@@ -1,0 +1,62 @@
+{
+    "emp-2045": {
+        "name": "Ananya Sharma",
+        "department": "Product Design",
+        "manager": "Rahul Verma",
+        "location": "Pune, IN",
+        "email": "ananya.sharma@company.com",
+        "mobile": "+91 98765 43210",
+        "login_id": "ananya.sharma",
+        "password_hash": "$2y$10$.KkC8zIiGFdgyZCH3YtRBO9DX.QF1XLkJkfS/26mdmbhmFcYbn2FW",
+        "date_of_joining": "2026-08-22",
+        "status": "active",
+        "salary": {
+            "wage_type": "Fixed Wage",
+            "month_wage": 50000,
+            "working_days_per_week": 5,
+            "break_time_hrs": 1,
+            "components": {
+                "basic": {
+                    "label": "Basic Salary",
+                    "basis": "wage",
+                    "percent": 50,
+                    "note": "Defined as % of monthly wage"
+                },
+                "hra": {
+                    "label": "House Rent Allowance",
+                    "basis": "basic",
+                    "percent": 50,
+                    "note": "% of basic salary"
+                },
+                "standard_allowance": {
+                    "label": "Standard Allowance",
+                    "basis": "fixed",
+                    "amount": 4167,
+                    "note": "Fixed amount, pro-rated on wage change"
+                },
+                "performance_bonus": {
+                    "label": "Performance Bonus",
+                    "basis": "wage",
+                    "percent": 8.33,
+                    "note": "Variable, paid during payroll"
+                },
+                "leave_travel_allowance": {
+                    "label": "Leave Travel Allowance",
+                    "basis": "basic",
+                    "percent": 8.33,
+                    "note": "% of basic salary"
+                },
+                "fixed_allowance": {
+                    "label": "Fixed Allowance",
+                    "basis": "remainder",
+                    "note": "Wage minus total of all other components"
+                }
+            },
+            "pf": {
+                "employee_percent": 12,
+                "employer_percent": 12
+            },
+            "professional_tax": 200
+        }
+    }
+}
