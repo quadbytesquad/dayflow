@@ -1,0 +1,90 @@
+[
+    {
+        "id": "hr-001",
+        "company_name": "Odoo India",
+        "company_initials": "OI",
+        "name": "Priya Nair",
+        "email": "priya.nair@odooindia.com",
+        "phone": "\u2014",
+        "login_id": "priya.nair",
+        "password_hash": "$2y$10$ygoH62T5p530SAYSJ4bGFeIRNZEIoN4UJmzhFU.cJ9Y5woJ5BwTnq",
+        "logo_path": null
+    },
+    {
+        "id": "hr-002",
+        "company_name": "odoo india",
+        "company_initials": "OI",
+        "name": "Sakshi Dessai",
+        "email": "saksh@gmail.com",
+        "phone": "9089990312",
+        "login_id": "saksh@gmail.com",
+        "password_hash": "$2y$10$8dJQ0hmejguF.ISl4L0yo.9pP0w2.7zNKXjFCLjZ9HLx1S0grwpCi",
+        "logo_path": null
+    },
+    {
+        "id": "hr-003",
+        "company_name": "Evara",
+        "company_initials": "E",
+        "name": "Flavia Oliveira",
+        "email": "flavia@gmail.com",
+        "phone": "9089990312",
+        "login_id": "flavia@gmail.com",
+        "password_hash": "$2y$10$/beBlj/sfE3eKuIbxFWnt.SlvY1WrWKc1iBD8ljzYZcXhe9rwV/Ta",
+        "logo_path": null
+    },
+    {
+        "id": "hr-004",
+        "company_name": "Evara",
+        "company_initials": "E",
+        "name": "Jesslyn",
+        "email": "jesslyn@gmail.com",
+        "phone": "9089990312",
+        "login_id": "jesslyn@gmail.com",
+        "password_hash": "$2y$10$C5YNAUXb.uY8qVr.ScdgteuVtcFGTKYgrnGbHsmSZVKtqMzgEOtGG",
+        "logo_path": "assets/uploads/logos/vara-49bd1ac6.png"
+    },
+    {
+        "id": "hr-005",
+        "company_name": "Evara",
+        "company_initials": "E",
+        "name": "Jesslyn",
+        "email": "jess@gmail.com",
+        "phone": "9089990312",
+        "login_id": "jess@gmail.com",
+        "password_hash": "$2y$10$vtzsJ6AP3O32CjrLKzMBEux.LIhTvqYD6Yd5M2Ft.8P9d35ai.B2C",
+        "logo_path": null
+    },
+    {
+        "id": "hr-006",
+        "company_name": "Evara",
+        "company_initials": "E",
+        "name": "Jesslyn",
+        "email": "jessm@gmail.com",
+        "phone": "9089990312",
+        "login_id": "jessm@gmail.com",
+        "password_hash": "$2y$10$9dQ1.XIT5P5MGaUMbtFHj.y7D8uVjHwXRdjNP4Mh8dC/Vw0SwMH0a",
+        "logo_path": null
+    },
+    {
+        "id": "hr-007",
+        "company_name": "Evara Sustainable",
+        "company_initials": "ES",
+        "name": "Scarlett",
+        "email": "scarlett@gmail.com",
+        "phone": "9089990312",
+        "login_id": "scarlett@gmail.com",
+        "password_hash": "$2y$10$WNld/Xi98h3zqDZjGocJ/eT3/YFkAOGQobUo.K.eN7MApErNotdR.",
+        "logo_path": "assets/uploads/logos/evara-sustainable-c9b277f9.png"
+    },
+    {
+        "id": "hr-008",
+        "company_name": "sus",
+        "company_initials": "S",
+        "name": "sharlene d",
+        "email": "ssss@gmail.com",
+        "phone": "7896541232",
+        "login_id": "ssss@gmail.com",
+        "password_hash": "$2y$10$qSJNNjWGHmLe65H/4Jnnfez/q/PGIY3zQZGARvslAH9q5KSaL3kNq",
+        "logo_path": "assets/uploads/logos/sus-3ee1d0e5.png"
+    }
+]

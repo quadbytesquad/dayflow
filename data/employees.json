@@ -57,6 +57,312 @@
                 "employer_percent": 12
             },
             "professional_tax": 200
+        },
+        "hr_id": "hr-001"
+    },
+    "emp-0001": {
+        "name": "Sakshi Dessai",
+        "department": "Produch design",
+        "manager": "Abs",
+        "location": "up",
+        "email": "saksh@gmail.com",
+        "mobile": "+91 7896589456",
+        "login_id": "OISADE20260002",
+        "password_hash": "$2y$10$t.AJBpBrcASVwRYu6umk2e9.in8W4DBkkeany8Kr3If7J2M.xwvJi",
+        "date_of_joining": "2026-08-22",
+        "status": "active",
+        "salary": {
+            "wage_type": "Fixed Wage",
+            "month_wage": 0,
+            "working_days_per_week": 5,
+            "break_time_hrs": 1,
+            "components": {
+                "basic": {
+                    "label": "Basic Salary",
+                    "basis": "wage",
+                    "percent": 50,
+                    "note": "Defined as % of monthly wage"
+                },
+                "hra": {
+                    "label": "House Rent Allowance",
+                    "basis": "basic",
+                    "percent": 50,
+                    "note": "% of basic salary"
+                },
+                "standard_allowance": {
+                    "label": "Standard Allowance",
+                    "basis": "fixed",
+                    "amount": 0,
+                    "note": "Fixed amount, pro-rated on wage change"
+                },
+                "performance_bonus": {
+                    "label": "Performance Bonus",
+                    "basis": "wage",
+                    "percent": 8.33,
+                    "note": "Variable, paid during payroll"
+                },
+                "leave_travel_allowance": {
+                    "label": "Leave Travel Allowance",
+                    "basis": "basic",
+                    "percent": 8.33,
+                    "note": "% of basic salary"
+                },
+                "fixed_allowance": {
+                    "label": "Fixed Allowance",
+                    "basis": "remainder",
+                    "note": "Wage minus total of all other components"
+                }
+            },
+            "pf": {
+                "employee_percent": 12,
+                "employer_percent": 12
+            },
+            "professional_tax": 200
+        },
+        "hr_id": "hr-001"
+    },
+    "emp-0002": {
+        "hr_id": "hr-004",
+        "name": "Flavia Oliveira",
+        "department": "Product design",
+        "manager": "Simran",
+        "location": "Goa",
+        "email": "flavia@gmail.com",
+        "mobile": "+91 7896589456",
+        "login_id": "EFLOL20260001",
+        "password_hash": "$2y$10$SxFmM3HV9e4/AUPkhXzZQeZu7ZGlfT010ZsOTBxWCS8W7oJqB78PC",
+        "date_of_joining": "2026-08-22",
+        "status": "active",
+        "salary": {
+            "wage_type": "Fixed Wage",
+            "month_wage": 0,
+            "working_days_per_week": 5,
+            "break_time_hrs": 1,
+            "components": {
+                "basic": {
+                    "label": "Basic Salary",
+                    "basis": "wage",
+                    "percent": 50,
+                    "note": "Defined as % of monthly wage"
+                },
+                "hra": {
+                    "label": "House Rent Allowance",
+                    "basis": "basic",
+                    "percent": 50,
+                    "note": "% of basic salary"
+                },
+                "standard_allowance": {
+                    "label": "Standard Allowance",
+                    "basis": "fixed",
+                    "amount": 0,
+                    "note": "Fixed amount, pro-rated on wage change"
+                },
+                "performance_bonus": {
+                    "label": "Performance Bonus",
+                    "basis": "wage",
+                    "percent": 8.33,
+                    "note": "Variable, paid during payroll"
+                },
+                "leave_travel_allowance": {
+                    "label": "Leave Travel Allowance",
+                    "basis": "basic",
+                    "percent": 8.33,
+                    "note": "% of basic salary"
+                },
+                "fixed_allowance": {
+                    "label": "Fixed Allowance",
+                    "basis": "remainder",
+                    "note": "Wage minus total of all other components"
+                }
+            },
+            "pf": {
+                "employee_percent": 12,
+                "employer_percent": 12
+            },
+            "professional_tax": 200
+        }
+    },
+    "emp-0003": {
+        "hr_id": "hr-004",
+        "name": "Simran",
+        "department": "Product design",
+        "manager": "Flavia",
+        "location": "Goa",
+        "email": "simran@gmail.com",
+        "mobile": "+91 7896589456",
+        "login_id": "ESISI20260002",
+        "password_hash": "$2y$10$7H3VrppWZd3u4m.iMgRu/O.ElAVMh2f98fmcoI22S11lr2y3vbtRC",
+        "date_of_joining": "2026-08-22",
+        "status": "active",
+        "salary": {
+            "wage_type": "Fixed Wage",
+            "month_wage": 0,
+            "working_days_per_week": 5,
+            "break_time_hrs": 1,
+            "components": {
+                "basic": {
+                    "label": "Basic Salary",
+                    "basis": "wage",
+                    "percent": 50,
+                    "note": "Defined as % of monthly wage"
+                },
+                "hra": {
+                    "label": "House Rent Allowance",
+                    "basis": "basic",
+                    "percent": 50,
+                    "note": "% of basic salary"
+                },
+                "standard_allowance": {
+                    "label": "Standard Allowance",
+                    "basis": "fixed",
+                    "amount": 0,
+                    "note": "Fixed amount, pro-rated on wage change"
+                },
+                "performance_bonus": {
+                    "label": "Performance Bonus",
+                    "basis": "wage",
+                    "percent": 8.33,
+                    "note": "Variable, paid during payroll"
+                },
+                "leave_travel_allowance": {
+                    "label": "Leave Travel Allowance",
+                    "basis": "basic",
+                    "percent": 8.33,
+                    "note": "% of basic salary"
+                },
+                "fixed_allowance": {
+                    "label": "Fixed Allowance",
+                    "basis": "remainder",
+                    "note": "Wage minus total of all other components"
+                }
+            },
+            "pf": {
+                "employee_percent": 12,
+                "employer_percent": 12
+            },
+            "professional_tax": 200
+        }
+    },
+    "emp-0004": {
+        "hr_id": "hr-007",
+        "name": "Malcolm",
+        "department": "Product design",
+        "manager": "Monica",
+        "location": "Goa",
+        "email": "malcolm@gmail.com",
+        "mobile": "+91 7896589456",
+        "login_id": "ESMAMA20260001",
+        "password_hash": "$2y$10$sek8RIG/Y/l0KDqvkrSO7upuqZxndx.4sUggssZ1qX4JJihZoVyN2",
+        "date_of_joining": "2026-08-22",
+        "status": "active",
+        "salary": {
+            "wage_type": "Fixed Wage",
+            "month_wage": 0,
+            "working_days_per_week": 5,
+            "break_time_hrs": 1,
+            "components": {
+                "basic": {
+                    "label": "Basic Salary",
+                    "basis": "wage",
+                    "percent": 50,
+                    "note": "Defined as % of monthly wage"
+                },
+                "hra": {
+                    "label": "House Rent Allowance",
+                    "basis": "basic",
+                    "percent": 50,
+                    "note": "% of basic salary"
+                },
+                "standard_allowance": {
+                    "label": "Standard Allowance",
+                    "basis": "fixed",
+                    "amount": 0,
+                    "note": "Fixed amount, pro-rated on wage change"
+                },
+                "performance_bonus": {
+                    "label": "Performance Bonus",
+                    "basis": "wage",
+                    "percent": 8.33,
+                    "note": "Variable, paid during payroll"
+                },
+                "leave_travel_allowance": {
+                    "label": "Leave Travel Allowance",
+                    "basis": "basic",
+                    "percent": 8.33,
+                    "note": "% of basic salary"
+                },
+                "fixed_allowance": {
+                    "label": "Fixed Allowance",
+                    "basis": "remainder",
+                    "note": "Wage minus total of all other components"
+                }
+            },
+            "pf": {
+                "employee_percent": 12,
+                "employer_percent": 12
+            },
+            "professional_tax": 200
+        }
+    },
+    "emp-0005": {
+        "hr_id": "hr-008",
+        "name": "Scarlett",
+        "department": "Product design",
+        "manager": "Abs",
+        "location": "Goa",
+        "email": "jessm@gmail.com",
+        "mobile": "+91 7896589456",
+        "login_id": "SSCSC20260001",
+        "password_hash": "$2y$10$ab59MHi8pvcWBLFBQwXk7uEFYMPXtKnb9qK.nF7JwNL78j9TQjnTK",
+        "date_of_joining": "2026-08-22",
+        "status": "active",
+        "salary": {
+            "wage_type": "Fixed Wage",
+            "month_wage": 0,
+            "working_days_per_week": 5,
+            "break_time_hrs": 1,
+            "components": {
+                "basic": {
+                    "label": "Basic Salary",
+                    "basis": "wage",
+                    "percent": 50,
+                    "note": "Defined as % of monthly wage"
+                },
+                "hra": {
+                    "label": "House Rent Allowance",
+                    "basis": "basic",
+                    "percent": 50,
+                    "note": "% of basic salary"
+                },
+                "standard_allowance": {
+                    "label": "Standard Allowance",
+                    "basis": "fixed",
+                    "amount": 0,
+                    "note": "Fixed amount, pro-rated on wage change"
+                },
+                "performance_bonus": {
+                    "label": "Performance Bonus",
+                    "basis": "wage",
+                    "percent": 8.33,
+                    "note": "Variable, paid during payroll"
+                },
+                "leave_travel_allowance": {
+                    "label": "Leave Travel Allowance",
+                    "basis": "basic",
+                    "percent": 8.33,
+                    "note": "% of basic salary"
+                },
+                "fixed_allowance": {
+                    "label": "Fixed Allowance",
+                    "basis": "remainder",
+                    "note": "Wage minus total of all other components"
+                }
+            },
+            "pf": {
+                "employee_percent": 12,
+                "employer_percent": 12
+            },
+            "professional_tax": 200
         }
     }
 }
