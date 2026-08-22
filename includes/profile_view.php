@@ -170,7 +170,7 @@ function render_profile_card(array $employee, string $employeeId, bool $canEditS
         </div>
 
         <div class="cap-warning" id="cap-warning">
-          ⚠ Components total exceeds the defined wage — Fixed Allowance has gone negative.
+          ⚠️ Components total exceeds the defined wage — Fixed Allowance has gone negative.
         </div>
 
         <div class="two-up">
