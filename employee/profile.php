@@ -1,6 +1,8 @@
 <?php
 require_once __DIR__ . '/../lib/auth.php';
 require_once __DIR__ . '/../includes/profile_view.php';
+require_once __DIR__ . '/../includes/topbar.php';
+
 require_role('employee', 'login.php');
 
 $id = current_employee_id();
@@ -13,6 +15,7 @@ if ($id === null || !isset($employees[$id])) {
 }
 
 $employee = $employees[$id];
+$company = find_hr_account($employee['hr_id'] ?? null);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -27,15 +30,12 @@ $employee = $employees[$id];
 <body>
 
 <header class="topbar">
-  <a href="../landing.php" class="topbar__logo" style="text-decoration:none;"><span class="mark"></span> Company Logo</a>
-  <nav class="topbar__nav">
-    <a href="profile.php" class="active">Employees</a>
-    <a href="#">Attendance</a>
-    <a href="#">Time Off</a>
-  </nav>
+  <?php render_company_brand($company); ?>
+  <?php render_topbar_nav('employee', 'profile'); ?>
   <div class="topbar__spacer"></div>
   <div class="role-toggle">
-    Signed in as <strong style="color:var(--lilac-700);"><?= htmlspecialchars($employee['name']) ?></strong>
+    Signed in as
+    <strong style="color:var(--lilac-700);"><?= htmlspecialchars($employee['name']) ?></strong>
     <form method="get" action="../logout.php" style="margin-left:4px;">
       <button type="submit">Sign out</button>
     </form>
@@ -47,5 +47,6 @@ $employee = $employees[$id];
   <?php render_profile_card($employee, $id, false); ?>
 </main>
 
+<script src="../assets/script.js"></script>
 </body>
 </html>
