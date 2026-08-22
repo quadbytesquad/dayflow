@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . '/../lib/auth.php';
+require_once __DIR__ . '/../includes/topbar.php';
 require_role('hr', 'login.php');
 
 $hr = current_hr();
@@ -17,13 +18,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $error = 'That email address doesn\'t look right.';
     } else {
         $employees = load_employees();
+        $companyEmployees = load_company_employees($hr['id']);
 
         $id = generate_employee_id($employees);
         $joinYear = date('Y');
-        $loginId = generate_login_id($values['name'], $hr['company_initials'] ?? 'CO', $joinYear, $employees);
+        $loginId = generate_login_id($values['name'], $hr['company_initials'] ?? 'CO', $joinYear, $companyEmployees);
         $tempPassword = generate_temp_password();
 
         $employees[$id] = [
+            'hr_id' => $hr['id'],
             'name' => $values['name'],
             'department' => $values['department'] ?: '—',
             'manager' => $values['manager'] ?: '—',
@@ -63,12 +66,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
 
 <header class="topbar">
-  <a href="../landing.php" class="topbar__logo" style="text-decoration:none;"><span class="mark"></span> Company Logo</a>
-  <nav class="topbar__nav">
-    <a href="dashboard.php">Employees</a>
-    <a href="#">Attendance</a>
-    <a href="#">Time Off</a>
-  </nav>
+  <?php render_company_brand($hr); ?>
+  <?php render_topbar_nav('hr', 'dashboard'); ?>
   <div class="topbar__spacer"></div>
   <div class="role-toggle">
     Signed in as <strong style="color:var(--lilac-700);"><?= htmlspecialchars($hr['name']) ?></strong> (HR)

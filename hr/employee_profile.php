@@ -1,13 +1,14 @@
 <?php
 require_once __DIR__ . '/../lib/auth.php';
 require_once __DIR__ . '/../includes/profile_view.php';
+require_once __DIR__ . '/../includes/topbar.php';
 require_role('hr', 'login.php');
 
 $hr = current_hr();
 $id = $_GET['id'] ?? '';
 $employees = load_employees();
 
-if ($id === '' || !isset($employees[$id])) {
+if ($id === '' || !isset($employees[$id]) || ($employees[$id]['hr_id'] ?? null) !== $hr['id']) {
     http_response_code(404);
     ?>
     <!DOCTYPE html><html><head><meta charset="UTF-8"><title>Not found</title>
@@ -38,12 +39,8 @@ $employee = $employees[$id];
 <body>
 
 <header class="topbar">
-  <a href="../landing.php" class="topbar__logo" style="text-decoration:none;"><span class="mark"></span> Company Logo</a>
-  <nav class="topbar__nav">
-    <a href="dashboard.php">Employees</a>
-    <a href="#">Attendance</a>
-    <a href="#">Time Off</a>
-  </nav>
+  <?php render_company_brand($hr); ?>
+  <?php render_topbar_nav('hr', 'dashboard'); ?>
   <div class="topbar__spacer"></div>
   <div class="role-toggle">
     Signed in as <strong style="color:var(--lilac-700);"><?= htmlspecialchars($hr['name']) ?></strong> (HR)
