@@ -23,10 +23,17 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 
 $id = $_GET['id'] ?? '';
 $employees = load_employees();
+$hr = current_hr();
 
 if ($id === '' || !isset($employees[$id])) {
     http_response_code(404);
     echo json_encode(['ok' => false, 'error' => 'Employee not found.']);
+    exit;
+}
+
+if (($employees[$id]['hr_id'] ?? null) !== ($hr['id'] ?? null)) {
+    http_response_code(403);
+    echo json_encode(['ok' => false, 'error' => 'You can only edit employees in your own company.']);
     exit;
 }
 
