@@ -17,6 +17,7 @@ function default_employees(): array
 {
     return [
         'emp-2045' => [
+            'hr_id' => 'hr-001',
             'name' => 'Ananya Sharma',
             'department' => 'Product Design',
             'manager' => 'Rahul Verma',
@@ -113,6 +114,26 @@ function save_hr_accounts(array $accounts): bool
     return file_put_contents(HR_ACCOUNTS_PATH, json_encode($accounts, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES)) !== false;
 }
 
+/** Returns only the employees belonging to the given HR/company account. */
+function load_company_employees(string $hrId): array
+{
+    return array_filter(load_employees(), fn($emp) => ($emp['hr_id'] ?? null) === $hrId);
+}
+
+/** Finds a single HR/company account by id, or null if it doesn't exist. */
+function find_hr_account(?string $hrId): ?array
+{
+    if ($hrId === null) {
+        return null;
+    }
+    foreach (load_hr_accounts() as $acc) {
+        if (($acc['id'] ?? null) === $hrId) {
+            return $acc;
+        }
+    }
+    return null;
+}
+
 /** Saves an uploaded company logo to assets/uploads/logos and returns its web-relative path, or null on failure. */
 function save_uploaded_logo(array $file, string $companyName): ?string
 {
@@ -130,7 +151,8 @@ function save_uploaded_logo(array $file, string $companyName): ?string
         return null;
     }
 
-    $slug = strtolower(trim((string) preg_replace('/[^a-z0-9]+/', '-', $companyName), '-'));
+    $slug = strtolower($companyName);
+    $slug = trim((string) preg_replace('/[^a-z0-9]+/', '-', $slug), '-');
     if ($slug === '') {
         $slug = 'company';
     }
