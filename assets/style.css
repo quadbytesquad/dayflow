@@ -101,6 +101,8 @@ button{ font-family:inherit; }
 }
 .topbar__nav a:hover{ background:var(--lilac-100); color:var(--lilac-700); }
 .topbar__nav a.active{ background:var(--lilac-600); color:#fff; }
+.topbar__nav a.disabled{ color:var(--faint); cursor:not-allowed; pointer-events:none; }
+.topbar__nav a.disabled:hover{ background:none; }
 
 .topbar__spacer{ flex:1; }
 
@@ -945,3 +947,12 @@ button{ font-family:inherit; }
 }
 .auth-switch a{ color:var(--lilac-600); font-weight:600; text-decoration:none; }
 .auth-switch a:hover{ text-decoration:underline; }
+
+/* Uploaded company logo shown in the topbar */
+.topbar__logo-img{
+  width:26px; height:26px;
+  border-radius:7px;
+  object-fit:cover;
+  margin-right:2px;
+  vertical-align:middle;
+}
